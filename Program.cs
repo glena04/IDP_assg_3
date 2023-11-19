@@ -48,6 +48,9 @@ class Program
         Console.WriteLine("\nInformation om Guld:");
         guld.Print();
 
+        // Slut linjen
+        Console.WriteLine("------------------------------------------------------------------------");
+
         // Skapa en array av 6 grundämnen
         Grundämne[] grundamnenArray = new Grundämne[6];
 
@@ -67,6 +70,9 @@ class Program
             grundamne?.Print();
         }
 
+        // Slut linjen
+        Console.WriteLine("------------------------------------------------------------------------");
+
         // Skriv ut endast namnen på metaller
         Console.WriteLine("Metaller:");
         foreach (var grundämne in grundamnenArray)
@@ -76,6 +82,9 @@ class Program
                 Console.WriteLine(grundämne.Namn);
             }
         }
+
+        // Slut linjen
+        Console.WriteLine("------------------------------------------------------------------------");
 
 
         // Skriv ut grundämnena med smältpunkt under 273.16 K och kokpunkt över 273.16 K
