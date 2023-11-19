@@ -35,8 +35,8 @@ class Program
     static void Main()
     {
         Grundämne syre = new Grundämne("Syre", 8, "Icke-metal", 54.36, 90.188);
-        Grundämne järn = new Grundämne("Järn", 26, "Metal", 1811, 3134);
-        Grundämne guld = new Grundämne("Guld", 79, "Metal", 1337.33, 3243);
+        Grundämne järn = new Grundämne("Järn", 26, "metal", 1811, 3134);
+        Grundämne guld = new Grundämne("Guld", 79, "metal", 1337.33, 3243);
 
         // Information om Grundämne
         Console.WriteLine("Information om Syre:");
@@ -59,12 +59,22 @@ class Program
         // Direkt-tilldela de tre övriga indexen i arrayen
         grundamnenArray[3] = new Grundämne("väte", 1, "ickemetall", 13.99, 20.271);
         grundamnenArray[4] = new Grundämne("brom", 35, "ickemetall", 265.8, 332.0);
-        grundamnenArray[5] = new Grundämne("kvicksilver", 80, "metall", 234.3210, 629.88);
+        grundamnenArray[5] = new Grundämne("kvicksilver", 80, "metal", 234.3210, 629.88);
 
         // Skriv ut grundämnena i arrayen
         foreach (var grundamne in grundamnenArray)
         {
             grundamne?.Print();
+        }
+
+        // Skriv ut endast namnen på metaller
+        Console.WriteLine("Metaller:");
+        foreach (var grundämne in grundamnenArray)
+        {
+            if (grundämne?.Typ == "metal")
+            {
+                Console.WriteLine(grundämne.Namn);
+            }
         }
     }
 }
