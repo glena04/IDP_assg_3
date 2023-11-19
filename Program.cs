@@ -61,5 +61,10 @@ class Program
         grundamnenArray[4] = new Grundämne("brom", 35, "ickemetall", 265.8, 332.0);
         grundamnenArray[5] = new Grundämne("kvicksilver", 80, "metall", 234.3210, 629.88);
 
+        // Skriv ut grundämnena i arrayen
+        foreach (var grundamne in grundamnenArray)
+        {
+            grundamne?.Print();
+        }
     }
 }
