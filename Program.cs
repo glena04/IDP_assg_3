@@ -1,6 +1,7 @@
 ﻿// Grundamne.cs
 
 using System;
+namespace IDP_ASSG_3;
 
 public class Grundämne
 {
@@ -26,5 +27,17 @@ public class Grundämne
         Console.WriteLine($"Typ: {Typ}");
         Console.WriteLine($"Smältpunkt: {Smältpunkt} K");
         Console.WriteLine($"Kokpunkt: {Kokpunkt} K");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Grundämne syre = new Grundämne("Syre", 8, "Icke-metal", 54.36, 90.188);
+        Grundämne järn = new Grundämne("Järn", 26, "Metal", 1811, 3134);
+        Grundämne guld = new Grundämne("Guld", 79, "Metal", 1337.33, 3243);
+
+       
     }
 }
