@@ -48,5 +48,18 @@ class Program
         Console.WriteLine("\nInformation om Guld:");
         guld.Print();
 
+        // Skapa en array av 6 grundämnen
+        Grundämne[] grundamnenArray = new Grundämne[6];
+
+        // Tilldela värden till de första 3 elementen i arrayen
+        grundamnenArray[0] = syre;
+        grundamnenArray[1] = järn;
+        grundamnenArray[2] = guld;
+
+        // Direkt-tilldela de tre övriga indexen i arrayen
+        grundamnenArray[3] = new Grundämne("väte", 1, "ickemetall", 13.99, 20.271);
+        grundamnenArray[4] = new Grundämne("brom", 35, "ickemetall", 265.8, 332.0);
+        grundamnenArray[5] = new Grundämne("kvicksilver", 80, "metall", 234.3210, 629.88);
+
     }
 }
