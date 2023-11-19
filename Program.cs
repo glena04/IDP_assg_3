@@ -38,6 +38,15 @@ class Program
         Grundämne järn = new Grundämne("Järn", 26, "Metal", 1811, 3134);
         Grundämne guld = new Grundämne("Guld", 79, "Metal", 1337.33, 3243);
 
-       
+        // Information om Grundämne
+        Console.WriteLine("Information om Syre:");
+        syre.Print();
+
+        Console.WriteLine("\nInformation om Järn:");
+        järn.Print();
+
+        Console.WriteLine("\nInformation om Guld:");
+        guld.Print();
+
     }
 }
