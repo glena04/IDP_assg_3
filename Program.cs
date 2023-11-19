@@ -11,6 +11,7 @@ public class Grundämne
     public double Smältpunkt { get; set; } // Kelvin
     public double Kokpunkt { get; set; } // Kelvin
 
+    // Parameterized constructor for initialization
     public Grundämne(string namn, int z, string typ, double smältpunkt, double kokpunkt)
     {
         Namn = namn;
@@ -34,11 +35,12 @@ class Program
 {
     static void Main()
     {
+        // Instansierat 3 grundämnen med deras data
         Grundämne syre = new Grundämne("Syre", 8, "Icke-metal", 54.36, 90.188);
         Grundämne järn = new Grundämne("Järn", 26, "metal", 1811, 3134);
         Grundämne guld = new Grundämne("Guld", 79, "metal", 1337.33, 3243);
 
-        // Information om Grundämne
+        // Uttryck av Information om Grundämne
         Console.WriteLine("Information om Syre:");
         syre.Print();
 
