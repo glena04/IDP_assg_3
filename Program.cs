@@ -76,5 +76,16 @@ class Program
                 Console.WriteLine(grundämne.Namn);
             }
         }
+
+
+        // Skriv ut grundämnena med smältpunkt under 273.16 K och kokpunkt över 273.16 K
+        Console.WriteLine("Grundämnen med smältpunkt under 273.16 K och kokpunkt över 273.16 K:");
+        foreach (var grundamne in grundamnenArray)
+        {
+            if (grundamne?.Smältpunkt < 273.16 && grundamne?.Kokpunkt > 273.16)
+            {
+                grundamne?.Print();
+            }
+        }
     }
 }
